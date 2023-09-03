@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="header">Vastandada patil college of engineering</h1>
+    <div class="container">
+      <img
+        class="img"
+        src="https://www.collegebatch.com/static/clg-gallery/vasantdada-patil-pratishthans-college-of-engineering-visual-arts-mumbai-214531.jpg"
+        alt="Student Image"
+      />
+      <h2>Student Registration Form</h2>
+      <form id="registrationForm" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" />
+            <div id="firstNameError" class="error"></div>
+          </div>
+          <div class="col">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" />
+            <div id="lastNameError" class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" />
+            <div id="fatherNameError" class="error"></div>
+          </div>
+          <div class="col">
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" />
+            <div id="motherNameError" class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" />
+            <div id="phoneNumberError" class="error"></div>
+          </div>
+          <div class="col">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <div id="emailError" class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="gender">Gender:</label>
+            <div class="gender-checkboxes">
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="Other" />
+              <label for="other">Other</label>
+            </div>
+            <div id="genderError" class="error"></div>
+          </div>
+          <div class="col">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" />
+            <div id="dobError" class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+            <div id="addressError" class="error"></div>
+          </div>
+          <div class="col">
+            <label for="bloodGroup">Blood Group:</label>
+            <input type="text" id="bloodGroup" name="bloodGroup" />
+            <div id="bloodGroupError" class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+              <option value="">Select a department</option>
+              <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+              <!-- Add more department options as needed -->
+            </select>
+            <div id="departmentError" class="error"></div>
+          </div>
+          <div class="col">
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" />
+            <div id="photoError" class="error"></div>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit" class="btn1">Submit</button>
+          <button type="reset" class="btn2">Reset</button>
+        </div>
+      </form>
+
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>

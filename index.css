@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header{
+    text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+label,
+input,
+textarea,
+select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 400px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}
+
+.img {
+  width: 100%;
+}
+
+/* Styling for the gender checkboxes */
+input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.2); /* Increase checkbox size */
+}
+
+/* Styling for the photo upload field */
+input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Adjust input box size for better alignment */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 95%;
+}
+
+.gender-checkboxes {
+  display: flex;
+}
+.btn {
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex-basis: 48%; /* Adjust as needed to control column width */
+}
+
+.error {
+  color: red;
+}
+.btn1{
+    margin-left: 0px;
+}
+.btn2{
+    margin-left: 30px;
+}
